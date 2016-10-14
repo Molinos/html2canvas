@@ -8,6 +8,7 @@ function ImageContainer(src, cors) {
         self.image.onerror = reject;
         if (cors) {
             self.image.crossOrigin = "anonymous";
+            src += '?best-fork-ever'
         }
         self.image.src = src;
         if (self.image.complete === true) {
